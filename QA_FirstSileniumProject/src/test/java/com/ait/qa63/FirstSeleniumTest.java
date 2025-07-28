@@ -12,7 +12,6 @@ public class FirstSeleniumTest {
 
     // before - setUp
     @BeforeMethod // pre conditions
-
     public void setUp() {
         driver = new ChromeDriver();
         // selenium webdriver finds this webdriver on my computer, in path parametr
