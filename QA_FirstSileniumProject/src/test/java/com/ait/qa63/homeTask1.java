@@ -75,6 +75,32 @@ public class homeTask1 {
         System.out.println("partialLink1 = " + partialLink1.getText());
     }
 
+    @Test
+    public void findElementsByCssSelector(){
+        driver.findElement(By.cssSelector("h2"));
+        driver.findElement(By.cssSelector("p"));
+
+        driver.findElement(By.cssSelector(".topic-html-content-header"));
+        driver.findElement(By.cssSelector(".poll-display-text"));
+
+        driver.findElement(By.cssSelector("#dialog-notifications-success"));
+        driver.findElement(By.cssSelector("#bar-notification"));
+
+        driver.findElement(By.cssSelector("[href='/register']"));
+        driver.findElement(By.cssSelector("[href='/login']"));
+
+        List<WebElement> links1 = driver.findElements(By.cssSelector("[href$='-shoes']"));
+        System.out.println("links.size() = " + links1.size());
+
+        List<WebElement> links2 = driver.findElements(By.cssSelector("[href^='/appar']"));
+        System.out.println("links2.size() = " + links2.size());
+
+        List<WebElement> links3 = driver.findElements(By.cssSelector("[href*='electro']"));
+        System.out.println("links3.size() = " + links3.size());
+
+
+    }
+
     @AfterMethod(enabled = true)
     public void quitPage() {
         driver.quit();
