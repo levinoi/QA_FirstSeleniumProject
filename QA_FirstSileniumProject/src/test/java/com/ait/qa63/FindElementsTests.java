@@ -72,15 +72,16 @@ public class FindElementsTests {
         System.out.println("element = " + element.getText());
 
     }
+
     @Test
-    public void findByPartialLinkText(){
+    public void findByPartialLinkText() {
         WebElement element1 = driver.findElement(By.partialLinkText("Los"));
         System.out.println("element = " + element1.getText());
     }
 
     @Test
-    public void findElementsByCssSelector(){
-       // driver.findElement(By.tagName("h1"));
+    public void findElementsByCssSelector() {
+        // driver.findElement(By.tagName("h1"));
         // tagName -> h1
         driver.findElement(By.cssSelector("h1"));
         driver.findElement(By.cssSelector("h2"));
@@ -93,6 +94,7 @@ public class FindElementsTests {
         driver.findElement(By.cssSelector(".telephone"));
         driver.findElement(By.cssSelector(".navigation-link"));
 
+        // key - value
         driver.findElement(By.cssSelector("[href='/search']"));
         driver.findElement(By.cssSelector("[href='/let-car-work']"));
 
@@ -118,6 +120,49 @@ public class FindElementsTests {
 
 
     }
+
+    @Test
+    public void findByXpath() {
+
+        //XPath //tag[@attribute='parameter'] = //*[@attribute='parameter"]
+        //tag[1]
+        //tag[@attribute='parameter' or attribute2='parameter'2]
+        // function() //tag[function()=text']
+
+        // id -> //tag[@id='value']
+        driver.findElement(By.xpath("//input[@id='city']"));
+        driver.findElement(By.xpath("//input[@id='dates']"));
+
+        // class -> //tag[@class='value']
+        driver.findElement(By.xpath("//*[@class='telephone']"));
+        driver.findElement(By.xpath("//a[@class='navigation-link']"));
+
+        driver.findElement(By.xpath("//a[@href='/search']"));
+        driver.findElement(By.xpath("//a[@href='/let-car-work']"));
+
+        driver.findElement(By.xpath("//a[starts-with(@href,'/ter')]"));
+        driver.findElement(By.xpath("//*[starts-with(@class,'red')]"));
+
+        // contains text
+        // partial text
+        WebElement text = driver.findElement(By.xpath("//span[contains(text(),'Latest ')]"));
+        WebElement text1 = driver.findElement(By.xpath("//span[contains(.,'Latest ')]"));
+
+        System.out.println("text.getText() = " + text.getText());
+
+        // equals text
+        driver.findElement(By.xpath("//span[text()=' Latest feedback from our customers ']"));
+
+//        driver.findElement(By.cssSelector(".logo>img")); // one step above
+//        driver.findElement(By.cssSelector(".input-container [formcontrolname='city']"));
+
+        driver.findElement(By.xpath("//*[@class='logo']/img"));
+        driver.findElement(By.xpath("//*[@class='input-container']//*[@formcontrolname='city']"));
+
+        // cssSelector -> div>a     xpath -> //div/a
+        // cssSelector -> div a      xpath -> //div//a
+    }
+
 
     @AfterMethod
     public void quit() {
