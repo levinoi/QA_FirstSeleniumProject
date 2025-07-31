@@ -161,12 +161,32 @@ public class FindElementsTests {
 
         // cssSelector -> div>a     xpath -> //div/a
         // cssSelector -> div a      xpath -> //div//a
+
+        // parent
+        WebElement parent = driver.findElement(By.xpath("//h1/parent::*"));
+        WebElement parent1 = driver.findElement(By.xpath("//h1/parent::div"));
+        WebElement parent3 = driver.findElement(By.xpath("//h1/.."));
+
+        System.out.println("parent.getDomAttribute(\"class\") = " + parent.getDomAttribute("class"));
+
+        // ancestor
+        WebElement ancestor = driver.findElement(By.xpath("//h1/ancestor::div[2]"));
+        WebElement ancestor1 = driver.findElement(By.xpath("//h1/../.."));
+
+        System.out.println("ancestor.getDomAttribute(\"class\") = " + ancestor.getDomAttribute("class"));
+        System.out.println("ancestor1.getDomAttribute(\"class\") = " + ancestor1.getDomAttribute("class"));
+
+        // following-sibling - next "bottom" brother
+        WebElement text2 = driver.findElement(By.xpath("//h1/following-sibling::h2"));
+        System.out.println("text2.getText() = " + text2.getText());
+
+
     }
 
 
     @AfterMethod
     public void quit() {
-       // driver.quit();
+       driver.quit();
     }
 
 }
