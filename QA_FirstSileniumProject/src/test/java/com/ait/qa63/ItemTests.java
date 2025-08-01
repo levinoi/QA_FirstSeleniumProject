@@ -3,7 +3,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class AddProductToTheCart extends TestBase {
+public class ItemTests extends TestBase {
 
     @BeforeMethod
     public void preconditions() {
@@ -16,7 +16,7 @@ public class AddProductToTheCart extends TestBase {
     }
 
     @Test
-    public void AddProductIntoCart() {
+    public void addItemToCartTest() {
        // pause(1000);
         String itemTitle = getItemTitle();
         clickOnItemLink();
