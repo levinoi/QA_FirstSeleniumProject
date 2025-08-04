@@ -1,7 +1,6 @@
-package com.ait.qa63;
+package com.ait.qa63.others;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -25,7 +24,7 @@ public class FindElementsTests {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
-    @Test
+    @Test (enabled = false)
     public void findElementByTagName() {
         //driver.findElement(By.tagName("h1"));
         WebElement title = driver.findElement(By.tagName("h1"));

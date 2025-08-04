@@ -1,4 +1,4 @@
-package com.ait.qa63;
+package com.shop.models;
 
 public class UserData {
     private String userName;

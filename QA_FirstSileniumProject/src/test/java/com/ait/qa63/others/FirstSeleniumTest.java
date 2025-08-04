@@ -1,4 +1,4 @@
-package com.ait.qa63;
+package com.ait.qa63.others;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
