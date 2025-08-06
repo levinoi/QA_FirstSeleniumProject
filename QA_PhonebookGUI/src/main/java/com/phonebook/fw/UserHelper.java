@@ -45,4 +45,13 @@ public class UserHelper extends BaseHelper
     public boolean isErrorMessagePresent() {
         return isElementPresent(By.cssSelector(".login_login__3EHKB>div"));
     }
+
+    public void clearPasswordField() {
+        driver.findElement(By.name("password")).clear();
+
+    }
+
+    public void clearEmailField() {
+        driver.findElement(By.name("email")).clear();
+    }
 }

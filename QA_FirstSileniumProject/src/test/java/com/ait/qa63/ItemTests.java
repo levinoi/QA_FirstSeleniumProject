@@ -20,7 +20,7 @@ public class ItemTests extends TestBase {
     public void addItemToCartTest() {
         // pause(1000);
         String itemTitle = app.getItemHelper().getItemTitle();
-        app.getItemHelper().clickOnItemLink();
+        app.getItemHelper().clickOnItemLink("3");
         app.getBaseHelper().pause(2000);
         app.getItemHelper().clickOnShoppingCart();
 

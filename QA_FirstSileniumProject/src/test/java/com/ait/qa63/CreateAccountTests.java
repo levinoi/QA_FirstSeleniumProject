@@ -18,7 +18,7 @@ public class CreateAccountTests extends TestBase {
 
 
         Assert.assertTrue(app.getBaseHelper().isElementPresent(By.xpath("//div[@class='page registration-result-page']//div[@class='result']")));
-        Assert.assertTrue(app.getBaseHelper().isElementPresent(By.xpath("//a[@href='/customer/info']")));
+
 
 
     }

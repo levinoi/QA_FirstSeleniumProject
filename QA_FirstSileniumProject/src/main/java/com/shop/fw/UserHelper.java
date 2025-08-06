@@ -37,8 +37,6 @@ public class UserHelper extends BaseHelper {
         type(By.cssSelector("#ConfirmPassword"), user.getPassword());
         click(By.cssSelector("#register-button"));
 
-        WebElement emailValue = driver.findElement(By.xpath("//a[@href='/customer/info']"));
-        String userEmail = emailValue.getText();
     }
 
     public void clickOnLoginButton() {

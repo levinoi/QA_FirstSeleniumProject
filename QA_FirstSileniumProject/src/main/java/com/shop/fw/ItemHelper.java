@@ -22,9 +22,9 @@ public class ItemHelper extends BaseHelper {
         return itemName;
     }
 
-    public void clickOnItemLink() {
-        click(By.xpath(("//div[@class='product-grid home-page-product-grid']//div[@class='item-box'][2]//input[@value='Add to cart']")));
-       //  click(By.cssSelector(".item-box:nth-child("+number+").add-info.buttons.input"));
+    public void clickOnItemLink(String number) {
+     //   click(By.xpath(("//div[@class='product-grid home-page-product-grid']//div[@class='item-box'][2]//input[@value='Add to cart']")));
+         click(By.cssSelector(".item-box:nth-child("+number+") .add-info .buttons input")); //.item-box:nth-child(3) .add-info .buttons input
     }
 
     public void clickOnShoppingCart() {
@@ -32,8 +32,8 @@ public class ItemHelper extends BaseHelper {
     }
 
     public boolean isItemAddedIntoCart(String text) {
-         List<WebElement> items = driver.findElements(By.cssSelector("[href='/141-inch-laptop']"));
-        // List<WebElement> items = driver.findElements(By.cssSelector(".product-name"));
+        // List<WebElement> items = driver.findElements(By.cssSelector("[href='/141-inch-laptop']"));
+         List<WebElement> items = driver.findElements(By.cssSelector(".product-name"));
         for (WebElement element : items) {
             if (element.getText().equals(text)) return true;
         }

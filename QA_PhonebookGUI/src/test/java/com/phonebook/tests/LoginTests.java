@@ -17,7 +17,7 @@ public class LoginTests extends TestBase {
     }
 
 
-    @Test
+    @Test (priority = 1)
     public void loginPositiveTest(){
 
         app.getUser().clickOnLoginLink();
@@ -30,16 +30,35 @@ public class LoginTests extends TestBase {
     }
 
 
-    @Test
+    @Test (priority = 2)
     public void loginNegativeWithoutEmailTest(){
 
         app.getUser().clickOnLoginLink();
+        app.getUser().clearEmailField();
         // enter email
         app.getUser().fillLoginRegisterForm(new User()
                 .setPassword("Qay123$ddd"));
+        app.getUser().clearEmailField();
         app.getUser().clickOnLoginButton();
         softAssert.assertTrue(app.getUser().isAlertPresent());
         softAssert.assertTrue(app.getUser().isErrorMessagePresent());
+        softAssert.assertAll();
+
     }
+
+    @Test (priority = 3)
+    public void loginNegativeWithoutPasswordTest(){
+
+        app.getUser().clickOnLoginLink();
+        app.getUser().fillLoginRegisterForm(new User()
+                .setEmail("enigma2025@mail.com"));
+        app.getUser().clearPasswordField();
+        app.getUser().clickOnLoginButton();
+        softAssert.assertTrue(app.getUser().isAlertPresent());
+        softAssert.assertTrue(app.getUser().isErrorMessagePresent());
+        softAssert.assertAll();
+        app.getUser().clearEmailField();
+    }
+
 
 }

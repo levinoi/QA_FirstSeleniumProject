@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Quick" verbose="1">
+    <test name="Test 1">
+        <classes>
+            <class name="com.ait.qa63.CreateAccountTests"/>
+            <class name="com.ait.qa63.ItemTests"/>
+
+        </classes>
+    </test>
+
+
+</suite>
