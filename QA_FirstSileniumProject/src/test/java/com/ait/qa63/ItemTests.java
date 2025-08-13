@@ -1,4 +1,5 @@
 package com.ait.qa63;
+import com.shop.data.UserLoginData;
 import com.shop.models.UserData;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -10,8 +11,8 @@ public class ItemTests extends TestBase {
     public void preconditions() {
         app.getUserHelper().clickOnLoginLink();
         app.getUserHelper().fillInRequiredFieldsToLogin(new UserData()
-                .setEmail("lev_test@mail.com")
-                .setPassword("Qay123$ddd")
+                .setEmail(UserLoginData.EMAIL)
+                .setPassword(UserLoginData.PASSWORD)
         );
        app.getUserHelper().clickOnLoginButton();
     }
@@ -26,6 +27,4 @@ public class ItemTests extends TestBase {
 
         Assert.assertTrue(app.getItemHelper().isItemAddedIntoCart(itemTitle));
     }
-
-
 }

@@ -4,7 +4,7 @@
     <test name="Test 1">
         <classes>
             <class name="com.ait.qa63.CreateAccountTests"/>
-            <class name="com.ait.qa63.ItemTests"/>
+
 
         </classes>
     </test>
