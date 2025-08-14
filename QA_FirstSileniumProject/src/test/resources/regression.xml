@@ -5,7 +5,6 @@
         <classes>
             <class name="com.ait.qa63.CreateAccountTests"/>
 
-
         </classes>
     </test>
 

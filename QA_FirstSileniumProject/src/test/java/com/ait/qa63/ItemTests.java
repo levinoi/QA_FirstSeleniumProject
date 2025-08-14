@@ -3,6 +3,7 @@ import com.shop.data.UserLoginData;
 import com.shop.models.UserData;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class ItemTests extends TestBase {

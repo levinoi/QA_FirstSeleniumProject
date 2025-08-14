@@ -42,4 +42,13 @@ public class UserData {
     public String getEmail() {
         return email;
     }
+
+    @Override
+    public String toString() {
+        return "UserData{" +
+                "email='" + email + '\'' +
+                ", userName='" + userName + '\'' +
+                ", userLastName='" + userLastName + '\'' +
+                '}';
+    }
 }

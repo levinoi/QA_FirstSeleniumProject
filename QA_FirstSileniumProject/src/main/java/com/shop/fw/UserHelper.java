@@ -20,6 +20,10 @@ public class UserHelper extends BaseHelper {
         driver.findElement(By.cssSelector("[href='/register']")).click();
     }
 
+    public void clickOnSignOutButton(){
+        driver.findElement(By.cssSelector("[href='/logout']")).click();
+    }
+
     //
     public void fillInRequiredFieldsToLogin(UserData user) {
         // enter email

@@ -8,6 +8,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.*;
 
 import java.lang.reflect.Method;
+import java.util.Arrays;
 
 
 public class TestBase  {
@@ -17,8 +18,8 @@ public class TestBase  {
 
     @BeforeMethod (alwaysRun = true)
     // добавляем Метод что бы его название отобразилось в лог файле
-    public void startTest(Method method){
-        logger.info("Start test - {} ", method.getName());
+    public void startTest(Method method, Object[] p){
+        logger.info("Start test - {} with data: {} ", method.getName(), Arrays.asList(p));
     }
 
     @BeforeSuite (alwaysRun = true)
