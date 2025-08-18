@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ait.qa63.others.FirstSeleniumTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-08-13T17:28:52.159Z" hostname="Mac" time="0.0">
+  <properties/>
+  <testcase name="firstTest" classname="com.ait.qa63.others.FirstSeleniumTest" time="0.0"/>
+  <system-out><![CDATA[***************BeforeClass
+***************BeforeMethod
+**********************Test
+google is opened
+**********************AfterMethod
+]]></system-out>
+  <system-err><![CDATA[Aug 13, 2025 7:28:49 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+]]></system-err>
+</testsuite>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ait.qa63.others.homeTask1" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-08-13T17:29:14.370Z" hostname="Mac" time="18.762">
+  <properties/>
+  <testcase name="findByLinktext" classname="com.ait.qa63.others.homeTask1" time="0.028"/>
+  <testcase name="findByPartialLinkText" classname="com.ait.qa63.others.homeTask1" time="0.026"/>
+  <testcase name="findElementById" classname="com.ait.qa63.others.homeTask1" time="0.017"/>
+  <testcase name="findElementsByClassName" classname="com.ait.qa63.others.homeTask1" time="0.02"/>
+  <testcase name="findElementsByCssSelector" classname="com.ait.qa63.others.homeTask1" time="0.045"/>
+  <testcase name="findElementsByTagName" classname="com.ait.qa63.others.homeTask1" time="0.087"/>
+  <system-out><![CDATA[linkText1 = Register
+linkText2 = Log in
+partialLink2 = Blog
+partialLink1 = Apparel & Shoes
+elementId1.isDisplayed() = true
+elementId2.isDisplayed() = true
+class1 = Welcome to our store
+class2 = Do you like nopCommerce?
+links.size() = 3
+links2.size() = 3
+links3.size() = 3
+h2 value = Welcome to our store
+
+Shopping cart
+(0)
+Wishlist
+(0)
+
+
+
+
+
+
+
+
+Sign up for our newsletter:
+
+
+
+25.00
+1590.00
+800.00
+1200.00
+1800.00
+800.00
+paragraf value = Welcome to the new Tricentis store!
+]]></system-out>
+  <system-err><![CDATA[Aug 13, 2025 7:29:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+Aug 13, 2025 7:29:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+Aug 13, 2025 7:29:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+Aug 13, 2025 7:29:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+Aug 13, 2025 7:29:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+Aug 13, 2025 7:29:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+]]></system-err>
+</testsuite>

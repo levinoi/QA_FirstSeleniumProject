@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ait.qa63.others.FindElementsTests" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-08-13T17:28:23.185Z" hostname="Mac" time="25.402">
+  <properties/>
+  <testcase name="findByLinktext" classname="com.ait.qa63.others.FindElementsTests" time="0.025"/>
+  <testcase name="findByPartialLinkText" classname="com.ait.qa63.others.FindElementsTests" time="0.014"/>
+  <testcase name="findByXpath" classname="com.ait.qa63.others.FindElementsTests" time="0.102"/>
+  <testcase name="findElementByClassName" classname="com.ait.qa63.others.FindElementsTests" time="0.032"/>
+  <testcase name="findElementById" classname="com.ait.qa63.others.FindElementsTests" time="0.022"/>
+  <testcase name="findElementsByCssSelector" classname="com.ait.qa63.others.FindElementsTests" time="0.081"/>
+  <system-out><![CDATA[Let the car work
+element = Los Angeles
+element = Los Angeles
+text.getText() = Latest Feedback From Our Customers
+parent.getDomAttribute("class") = search-container
+ancestor.getDomAttribute("class") = search-card
+ancestor1.getDomAttribute("class") = search-card
+text2.getText() = Type your data and hit Yalla!
+telephone = 866-720-5721
+navLink = navigation-link
+true
+1
+elem = Log in
+]]></system-out>
+  <system-err><![CDATA[Aug 13, 2025 7:28:16 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+Aug 13, 2025 7:28:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+Aug 13, 2025 7:28:31 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+Aug 13, 2025 7:28:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+Aug 13, 2025 7:28:40 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+Aug 13, 2025 7:28:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+]]></system-err>
+</testsuite>

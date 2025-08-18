@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ait.qa63.others.HomeTask2" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-08-13T17:28:56.009Z" hostname="Mac" time="0.044">
+  <properties/>
+  <testcase name="findElementsByXPath" classname="com.ait.qa63.others.HomeTask2" time="0.044"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Aug 13, 2025 7:28:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+]]></system-err>
+</testsuite>

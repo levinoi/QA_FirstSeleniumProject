@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ait.qa63.CreateAccountTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-08-13T17:28:04.434Z" hostname="Mac" time="1.506">
+  <properties/>
+  <testcase name="registrationCheck" classname="com.ait.qa63.CreateAccountTests" time="1.506"/>
+  <system-out><![CDATA[19:28:04.433 [Test worker] INFO com.ait.qa63.TestBase -- Start test
+19:28:05.941 [Test worker] INFO com.ait.qa63.TestBase -- Stop test
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

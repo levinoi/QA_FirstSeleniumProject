@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ait.qa63.others.TableTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-08-13T17:29:01.279Z" hostname="Mac" time="9.767">
+  <properties/>
+  <testcase name="findByXpath" classname="com.ait.qa63.others.TableTests" time="0.0"/>
+  <testcase name="tableCssSelectorTest" classname="com.ait.qa63.others.TableTests" time="0.089"/>
+  <testcase name="xpathTableTest" classname="com.ait.qa63.others.TableTests" time="0.027"/>
+  <system-out><![CDATA[rows.size() = 21
+***********************************
+Company Contact Country
+Alfreds Futterkiste Maria Anders Germany
+Berglunds snabbköp Christina Berglund Sweden
+Centro comercial Moctezuma Francisco Chang Mexico
+Ernst Handel Roland Mendel Austria
+Island Trading Helen Bennett UK
+Königlich Essen Philip Cramer Germany
+Laughing Bacchus Winecellars Yoshi Tannamuri Canada
+Magazzini Alimentari Riuniti Giovanni Rovelli Italy
+Firstname Lastname
+Peter Griffin
+Lois Griffin
+Firstname Lastname
+Peter Griffin
+Lois Griffin
+Firstname Lastname
+Peter Griffin
+Lois Griffin
+Firstname Lastname
+Peter Griffin
+Lois Griffin
+***********************************
+austria.getText() = Ernst Handel Roland Mendel Austria
+peter.getText() = Peter Griffin
+austriaValue.getText() = Austria
+Ernst Handel Roland Mendel Austria
+**********************************************
+peter.getText() = Peter Griffin
+austriaValue.getText() = Austria
+]]></system-out>
+  <system-err><![CDATA[Aug 13, 2025 7:28:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+Aug 13, 2025 7:29:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+Aug 13, 2025 7:29:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 139, returning the closest version; found: 138; Please update to a Selenium version that supports CDP version 139
+]]></system-err>
+</testsuite>
